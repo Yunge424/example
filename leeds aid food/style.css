@@ -1,0 +1,343 @@
+/*
+Theme Name: WP Bootstrap
+Theme URI: http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial
+Description: A demo theme built to accompany the Treehouse blog post <a href="http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial">How to Build a WordPress Theme with Bootstrap</a>.
+Author: Zac Gordon
+Author URI: http://teamtreehouse.com/
+Version: 1.0
+Tags: responsive, white, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
+*/
+
+@import url('bootstrap/css/bootstrap.css'); 
+@import url('bootstrap/css/bootstrap-responsive.css');
+
+@font-face {
+    font-family: Maven Pro;
+    src: url('font/MavenPro-Regular.ttf');
+}
+
+body {
+     padding-bottom: 40px;
+     background-color: #ededee;
+     color: #717274;
+     font-family: 'Maven Pro';
+}
+
+footer {
+    font-size: 8pt;
+}
+
+a {
+    color: #717274;
+    text-decoration: none;
+}
+
+.wp-content-well a {
+    color: #717274;
+    text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+    color: #78ad50;
+    text-decoration: none;
+}
+
+.wp-content-well a {
+	color: #02c1f3;
+    text-decoration: underline;
+}
+
+
+#help-message {
+    font-size: larger;
+}
+
+/* centre align centered images! */
+.aligncenter, img.aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
+
+/* content pages some slight highlights */
+.wp-content-well h4 {
+    color: #222324;
+}
+
+.wp-content-well a:focus, a:hover {
+    color: #78ad50;
+}
+
+.wp-fp-group-pick {
+    margin-left: 40px;
+}
+
+.wp-content-well ul, p {
+    font-size: 12pt;
+}
+
+/* Header Style */
+.wp-header-img {
+    height: 70px;
+}
+
+/* Home page style */
+.wp-fp-img {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* front page container */
+.fp-wp-container {
+
+}
+
+/* front page well */
+.wp-fp-well {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 0px 40px 15px 40px;
+}
+
+.wp-header-menu {
+    min-height: 44px;
+    background-color: #f9ea74;
+    border-radius: 25px;
+    font-size: 12pt;
+    margin-top: 23px;
+}
+
+.wp-header-front-menu {
+    min-height: 44px;
+    background-color: #bbe0f9;
+    border-radius: 4px;
+    border: 1px solid #e3e3e3;
+    font-size: 12pt;
+    margin-top: 5px;
+    margin-bottom: -15px;
+}
+
+.wp-fp-front-menu ul {
+    padding-top: 12px;
+}
+
+.wp-fp-front-menu li {
+    display:inline;
+    margin-left: 56px;
+}
+
+.wp-header-cross {
+    position: relative;
+    top: 29px;
+    height: 50px;
+}
+
+/* top yellow menu */
+.wp-fp-yellow-menu {
+    width: 100%;
+    min-height: 44px;
+    background-color: #f9ea74;
+    border-radius: 25px;
+    font-size: 16pt;
+}
+
+.wp-fp-yellow-menu ul {
+    padding-top: 12px;
+}
+
+.wp-fp-yellow-menu li {
+    display:inline;
+    margin-left: 56px;
+}
+
+/* left side */
+.wp-fp-left {
+    font-size: 14pt;
+}
+
+.wp-fp-left-can {
+    float: left;
+    margin-bottom: 3px;
+    margin-left: 25px;
+}
+
+.wp-fp-left-can img {
+    margin-right: 5px;
+}
+
+.wp-fp-left-down-arrow {
+    float: left;
+    margin-left: 5px;
+}
+
+.wp-fp-left-can-box {
+    border: solid 13px #56b04e;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+    padding: 3px;
+}
+
+.wp-fp-left-text {
+    margin-top: 5px;
+}
+
+.wp-fp-left-text h3 {
+    text-align: right;
+}
+
+.wp-fp-left-arrow {
+    margin-top: 30px;
+}
+
+/* right side*/
+.wp-fp-right {
+    font-size: 14pt;
+    margin-top: 50px;
+}
+
+.wp-fp-right-can {
+    float: left;
+    margin-bottom: 3px;
+}
+
+.wp-fp-right-can img {
+    margin-right: 5px;
+}
+
+.wp-fp-right-down-arrow {
+    float: left;
+    margin-left: 5px;
+}
+
+.wp-fp-right-can-box {
+    border: solid 13px #56b04e;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+    padding: 3px;
+}
+
+.wp-fp-right-text {
+    margin-top: 5px;
+}
+
+.wp-fp-right-text h3 {
+    text-align: left;
+}
+
+.wp-fp-right-arrow {
+    margin-top: 30px;
+}
+
+.wp-fp-yellow-cross {
+    position: relative;
+    top: 29px;
+}
+
+/* bottom blue menu */
+.wp-fp-blue-cross {
+    float: right;
+    position: relative;
+    bottom: 40px;
+}
+
+.wp-fp-blue-menu {
+    width: 100%;
+    min-height: 44px;
+    background-color: #bbe0f9;
+    border-radius: 25px;
+    font-size: 16pt;
+}
+
+.wp-fp-blue-menu ul {
+    padding-top: 12px;
+}
+
+.wp-fp-blue-menu li {
+    display:inline;
+    margin-left: 15px;
+}
+
+.wp-fp-blue-container {
+    margin-left: 30px;
+}
+
+.wp-fp-center {
+    margin-top: 25px;
+    border-radius: 20em;
+    width: 26em; height: 25em;
+    background-color: #edf2e6;
+    margin-left: -10px;
+}
+
+.wp-fp-rotate-text {
+    font-size: 18pt;
+    top: 10pt;
+    right: 1px;
+}
+
+.wp-fp-center-img {
+    margin-top: 60px;
+}
+
+.popover-content {
+    font-size: 12pt;
+}
+
+.popover-title {
+    font-size: 12pt;
+}
+
+.wp-content-well {
+    background-color: #ffffff;
+}
+
+.wp-pages-img-left {
+    margin-right: 10px;
+}
+
+#background {
+    margin-top: 10px;
+}
+
+footer img {
+    margin-right: 20px;
+}
+
+footer p {
+    font-size: 10pt;
+}
+
+.logo-mobile {
+    margin-bottom: 10px;
+}
+
+.menu-mobile {
+    background-color: #f9ea74;
+    border-style: none;
+    border-radius: 25px;
+}
+
+.menu-mobile a {
+    border: 0 none !important;
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle {
+    background-color: #f9ea74;
+}
+
+.navbar .menu-item {
+    margin-right: -10px;
+}
+
+// page active menu item
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+	background-color: #ece39a;
+}
+
+// front page active menu item
+.navbar .nav > .active {
+	background-color: #d1e9f9;
+}
